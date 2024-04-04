@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download and Install Ticnes Android Apps</title>
+</head>
+<body>
+    <br><br>
+    <div style="text-aling: center">
+        <h1>TICNES-Store</h1><br>
+        <hr>
+        <h3>Bem Vindo a nossa AppStore: <br>a 1ª em Angola</h3><br><hr>
+        <p>Descarregue e teste a nossa <b>1ª App</b>.<br><br> Um projecto para eliminação do <b>Cartões de Estudante</b> em suporte de papel ou PVC em ANGOLA</p>
+        <p>Demo realizada por: Ivo Pacca</p>
+    <button onclick="downloadAndInstall()">Download and Install App</button><br><br><hr>
+    
+    <p>Descarregue e teste a nossa <b>2ª App</b>.<br><br> Um projecto para colocar o conforto e sabedoria da <b>Bíblia Sagrada (Igreja Evangélica)</b> na sua mão, 24h/7</p>
+        <p>Demo realizada por: M-Software (António Munzumbo)</p>
+    <button onclick="downloadAndInstall_2()">Download and Install App</button>
+    
+    </div>
+    
+    <script>
+        function downloadAndInstall() {
+            const apkUrl = 'https://ticnes.com/imelCard.apk'; // Replace with your APK URL
+            //const apkUrl = 'https://ticnes.com/cornelio_mbongo_app_debug.apk'; // Replace with your APK URL
+           
+
+            // Create an anchor element
+            const a = document.createElement('a');
+            a.href = apkUrl;
+            a.download = 'imelCard.apk'; // Set the desired filename for the downloaded APK
+
+            // Append the anchor to the document body
+            document.body.appendChild(a);
+
+            // Trigger a click event on the anchor to start the download
+            a.click();
+
+            // Clean up by removing the anchor
+            document.body.removeChild(a);
+        }
+        
+        function downloadAndInstall_2() {
+            const apkUrl = 'https://ticnes.com/BibliaOnline-release.apk'; // Replace with your APK URL
+            //const apkUrl = 'https://ticnes.com/cornelio_mbongo_app_debug.apk'; // Replace with your APK URL
+           
+
+            // Create an anchor element
+            const a = document.createElement('a');
+            a.href = apkUrl;
+            a.download = 'BibliaOnline-release.apk'; // Set the desired filename for the downloaded APK
+
+            // Append the anchor to the document body
+            document.body.appendChild(a);
+
+            // Trigger a click event on the anchor to start the download
+            a.click();
+
+            // Clean up by removing the anchor
+            document.body.removeChild(a);
+        }
+    </script>
+</body>
+</html>
